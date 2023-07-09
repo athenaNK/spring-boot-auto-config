@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="dg1-euipo-maven-releases" />
+      <option name="name" value="DG1 EUIPO Releases" />
+      <option name="url" value="https://binbox.intrasoft-intl.com:443/artifactory/dg1-euipo-maven-releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="dg1-euipo-maven-local-releases" />
+      <option name="name" value="DG1 EUIPO Local Releases" />
+      <option name="url" value="https://binbox.intrasoft-intl.com:443/artifactory/dg1-euipo-maven-local-releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central" />
+      <option name="url" value="https://repo1.maven.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="dg1-euipo-maven-snapshots" />
+      <option name="name" value="DG1 EUIPO Snapshots" />
+      <option name="url" value="https://binbox.intrasoft-intl.com:443/artifactory/dg1-euipo-maven-snapshots/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="dg1-euipo-maven-ext-releases" />
+      <option name="name" value="DG1 EUIPO External Releases" />
+      <option name="url" value="https://binbox.intrasoft-intl.com:443/artifactory/dg1-euipo-maven-ext-releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="dg1-euipo-maven-local-snapshots" />
+      <option name="name" value="DG1 EUIPO Local Snapshots" />
+      <option name="url" value="https://binbox.intrasoft-intl.com:443/artifactory/dg1-euipo-maven-local-snapshots/" />
+    </remote-repository>
+  </component>
+</project>

@@ -14,8 +14,8 @@ public class TomcatLauncher {
         // 1. once dependency added we can instantiate the Tomcat
         final Tomcat tomcat = new Tomcat();
 
-        // http://localhost:8081/ --> to have this running we need
-        tomcat.setPort(8081);//to define the port that server runs
+        // http://localhost:8080/ --> to have this running we need
+        tomcat.setPort(8080);//to define the port that server runs
         final Context context = tomcat.addContext("/", null);// to define the context path ( usually is /)
         // and a servlet that handles the requests in /login
         Tomcat.addServlet(context, "helloServlet", new HelloServlet());

@@ -4,6 +4,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.SQLException;
+
 public class Main {
     /**
      * Spring Boot - AutoConfig behind the hoods
@@ -14,7 +18,15 @@ public class Main {
      */
 
     public static void main(String[] args) {
-        new AnnotationConfigApplicationContext(MyAppConfig.class);
+        final AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(MyAppConfig.class);
+        final DataSource dataSource = ctx.getBean(DataSource.class);
+
+        try (Connection connection = dataSource.getConnection()) {
+            System.out.println("====== connection = " + connection);
+            System.out.println("====== connection.isValid = " + connection.isValid(5000));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Configuration
